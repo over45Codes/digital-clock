@@ -1,0 +1,48 @@
+body {
+    background-image: url("./images/dark-gradient-background.jpg");
+    color: rosybrown;
+    font-size: 25px;
+    font-style: italic;
+    font-family: Verdana;
+    text-align: center;
+    margin: 100px
+    
+}
+
+.clock {
+    background: thistle;
+    color: royalblue;
+    width: 400px;
+    margin: auto;
+    border-radius: 25px;
+    text-align: center;
+    border: 10px solid black;
+    padding: 25px;
+}
+
+.date {
+    background: rosybrown;
+    color: royalblue;
+    width: 400px;
+    margin: auto;
+    border-radius: 25px;
+    text-align: center;
+    border: 10px solid black;
+    padding: 25px;
+}
+
+.btn {
+    background: thistle;
+    color: royalblue;
+    padding: 8px;
+    font-size: 18px;
+    font-family: Verdana;
+    width: 300px;
+    margin-left: 35px;
+    border: 10px solid black;
+    padding: 15px;
+    border-radius: 25px;
+
+
+}
+
