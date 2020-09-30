@@ -16,31 +16,36 @@ function realTime() {
         amPm = "PM";
     }
 
-    var days = time.getDay();
+
+    
+    var days= time.getDay(); // number
     var months = time.getMonth();
     var year = time.getFullYear();
-    
-    var days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"]; 
 
+    var days = new Date (); 
+        days ['Sunday']
+        days ['Monday']
+        days ['Tuesday']
+        days ['Wednesday']
+        days ['Thursday'] 
+        days ['Friday']
+        days ['Saturday'];
+
+    document.getElementById("daysIndex").innerHTML = days; 
+
+
+    
     var months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
 
-    document.getElementById("days").innerHTML = days
-    document.getElementById("months").innerHTML = months
-    document.getElementById("year").innerHTML = year;
+    document.getElementById("hour").innerHTML = hour;
+    document.getElementById("minute").innerHTML = ":" + minute;
+    document.getElementById("seconds").innerHTML = ":" + seconds;
+    document.getElementById("amPm").innerHTML = amPm;  
 
-    document.getElementById("hour").innerHTML = hour
-    document.getElementById("minute").innerHTML = ":" + minute
-    document.getElementById("seconds").innerHTML = ":" + seconds 
-    document.getElementById("amPm").innerHTML = amPm;
-    
-    
+
 }
+
 setInterval(realTime, 1000)
-
-
-
- 
-
 
 
     
