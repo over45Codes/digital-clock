@@ -15,27 +15,49 @@ function realTime() {
         hour = hour -12;
         amPm = "PM";
     }
-
-
+ 
+     if(minute < 10) {
+        minute = "0" + minute;
+    } if(seconds < 10) {
+        seconds = "0" + seconds;
+    }
+   
     
-    var days= time.getDay(); // number
+    var dayIndex = time.getDay(); // number
     var months = time.getMonth();
     var year = time.getFullYear();
 
-    var days = new Date (); 
-        days ['Sunday']
-        days ['Monday']
-        days ['Tuesday']
-        days ['Wednesday']
-        days ['Thursday'] 
-        days ['Friday']
-        days ['Saturday'];
+    const dayArray = [
+        "Sunday",
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday",
+        "Saturday",
+     ]; 
+         
+    const day = dayArray[dayIndex];  
+    document.getElementById("daysIndex").innerHTML = day
 
-    document.getElementById("daysIndex").innerHTML = days; 
+    const monthArray = [
+        "January",
+        "February",
+        "March",
+        "April",
+        "May",
+        "June",
+        "July",
+        "August",
+        "September",
+        "October",
+        "November",
+        "December",
 
-
-    
-    var months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+     ]; 
+         
+    const month = monthArray[months];  
+    document.getElementById("currentMonth").innerHTML = ', ' + month + ', ' + year
 
     document.getElementById("hour").innerHTML = hour;
     document.getElementById("minute").innerHTML = ":" + minute;
