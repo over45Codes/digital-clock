@@ -1,5 +1,3 @@
-
-
 function realTime() {
     var time = new Date();
     var hour = time.getHours();
@@ -21,8 +19,21 @@ function realTime() {
     } if(seconds < 10) {
         seconds = "0" + seconds;
     }
-   
     
+    
+    let isMilitaryTime = false; // Trying to make the military button 
+    
+    let militaryTime = document.getElementById('button 24');
+     militaryTime.addEventListener('click', function() { isMilitaryTime = true });
+
+     if(isMilitaryTime === false) {
+        document.getElementById("button 24").innerHTML = hour + ':' + minute + ':' + seconds;
+     } else  { 
+        amPm = hour >= 12 
+        hour = hour % 12 || 12;
+        document.getElementById("button 24").innerHTML = hour + ':' + minute + ':' + seconds + ' ' + amPm; 
+     }
+
     var dayIndex = time.getDay(); // number
     var months = time.getMonth();
     var year = time.getFullYear();
@@ -68,20 +79,4 @@ function realTime() {
 }
 
 setInterval(realTime, 1000)
-
-
-    
-
-   
- 
-
-
-
-    
-
-
-
-
-
-
 
