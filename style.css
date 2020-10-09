@@ -6,7 +6,6 @@ body {
     font-family: Verdana;
     text-align: center;
     margin: 100px
-    
 }
 
 .clock {
@@ -16,31 +15,30 @@ body {
     margin: auto;
     border-radius: 25px;
     text-align: center;
-    border: 10px solid white;
+    border: 10px ridge rgb(221, 80, 200);
     padding: 25px;
 }
 
 .date {
-    background: lightskyblue;
+    background: rgb(238, 214, 217);
     color: royalblue;
     width: 400px;
     margin: auto;
     border-radius: 25px;
     text-align: center;
-    border: 10px solid white;
+    border: 10px ridge mediumorchid;
     padding: 25px;
 }
 
-.button {
-    background: thistle;
-    font-size: 25px;
-    font-family: Verdana;
-    width: 250px;
-    margin: auto;
-    border: 10px solid white;
+#button-24 {
     padding: 4px;
+    color: mediumblue;
+    background: thistle;
+    font-size: 18px;
+    font-family: Verdana;
+    width: 200px;
+    margin: auto;
+    border: 6px ridge mediumvioletred;
     border-radius: 35px;
-
-
 }
 

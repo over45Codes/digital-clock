@@ -1,15 +1,17 @@
-# digital-clock
+# JavaScript Digital Clock App
 
 
 * Digital clock application built in JavaScript, HTML, and CSS 
 
 
-Please see [here!](https://gracii.github.io/digital-clock/)
+Try it [here!](https://gracii.github.io/digital-clock/)
+
+![alt text] (  )
 
 ## Summary 
 
-This is my first small project and I created this   digital clock using HTML, CSS, and Javascript. 
-It was challenging first application, but I really enjoyed the challenge!! 
+This is my first small app project in JavaScript, using HTML, and CSS.
+It was challenging first application, especially the functions and button but I really enjoyed the challenge!! 
 
 ## Author
-* Grace Castaneda - Newbie Coder - 
+* Grace Castaneda - Passionate Coder - [Linkedin](https://www.linkedin.com/in/castanedagrace/)

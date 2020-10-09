@@ -1,43 +1,30 @@
+let isMilitaryTime = false;
+let intervalID;
+
+document.addEventListener("DOMContentLoaded", function() {
+    realTime()
+    setInterval(realTime, 1000)
+})
+       
+let button = document.getElementById('button-24')
+button.addEventListener('click', function() {
+     isMilitaryTime = !isMilitaryTime 
+     
+     clearInterval(intervalID)
+     realTime()
+     intervalID = setInterval(realTime, 1000)
+})
+
 function realTime() {
-    var time = new Date();
-    var hour = time.getHours();
-    var minute = time.getMinutes();
-    var seconds = time.getSeconds();
-    var amPm = "AM";
-
-    if(hour == 0){
-        hour = 12;
-    }
+    let time = new Date();
+    let hour = time.getHours();
+    let minute = formatTime(time.getMinutes());
+    let seconds = formatTime(time.getSeconds());
+    let dayIndex = time.getDay(); 
+    let months = time.getMonth();
+    let dayOfTheMonth = time.getDate();
+    let year = time.getFullYear();
     
-    if(hour >12){
-        hour = hour -12;
-        amPm = "PM";
-    }
- 
-     if(minute < 10) {
-        minute = "0" + minute;
-    } if(seconds < 10) {
-        seconds = "0" + seconds;
-    }
-    
-    
-    let isMilitaryTime = false; // Trying to make the military button 
-    
-    let militaryTime = document.getElementById('button 24');
-     militaryTime.addEventListener('click', function() { isMilitaryTime = true });
-
-     if(isMilitaryTime === false) {
-        document.getElementById("button 24").innerHTML = hour + ':' + minute + ':' + seconds;
-     } else  { 
-        amPm = hour >= 12 
-        hour = hour % 12 || 12;
-        document.getElementById("button 24").innerHTML = hour + ':' + minute + ':' + seconds + ' ' + amPm; 
-     }
-
-    var dayIndex = time.getDay(); // number
-    var months = time.getMonth();
-    var year = time.getFullYear();
-
     const dayArray = [
         "Sunday",
         "Monday",
@@ -46,12 +33,8 @@ function realTime() {
         "Thursday",
         "Friday",
         "Saturday",
-     ]; 
-         
-    const day = dayArray[dayIndex];  
-    document.getElementById("daysIndex").innerHTML = day
-
-    const monthArray = [
+    ]; 
+     const monthArray = [
         "January",
         "February",
         "March",
@@ -64,19 +47,28 @@ function realTime() {
         "October",
         "November",
         "December",
+    ]; 
 
-     ]; 
-         
+    let formattedHour = isMilitaryTime ? hour : getStandardHour(hour)
+   
+    const day = dayArray[dayIndex];  
+    document.getElementById("daysIndex").innerHTML = day + ','
     const month = monthArray[months];  
-    document.getElementById("currentMonth").innerHTML = ', ' + month + ', ' + year
-
-    document.getElementById("hour").innerHTML = hour;
+    document.getElementById("currentMonth").innerHTML = month + ' ' + dayOfTheMonth + ', ' + year
+    document.getElementById("hour").innerHTML = formattedHour;
     document.getElementById("minute").innerHTML = ":" + minute;
     document.getElementById("seconds").innerHTML = ":" + seconds;
-    document.getElementById("amPm").innerHTML = amPm;  
-
-
+    document.getElementById("amPm").innerHTML = getAmPm(hour);  
 }
 
-setInterval(realTime, 1000)
+function getAmPm(hour) { 
+    return isMilitaryTime ? "" : parseInt(hour) < 12 ? "AM" : "PM"
+}
 
+function formatTime(time) {
+    return time < 10 ? "0" + time : time
+}
+
+function getStandardHour(hour) {
+    return parseInt(hour) > 12 ? parseInt(hour) - 12 : hour
+}
