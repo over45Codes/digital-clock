@@ -6,7 +6,7 @@
 
 Try it [here!](https://gracii.github.io/digital-clock/)
 
-![alt text] (https://github.com/Gracii/digital-clock/blob/master/images/Digital%20Clock%20App%20.png)
+![alt text](https://github.com/Gracii/digital-clock/blob/master/images/Digital%20Clock%20App%20.png)
 
 ## Summary 
 
