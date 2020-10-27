@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", function() {
     realTime()
     setInterval(realTime, 1000)
 })
-       
+
 let button = document.getElementById('button-24')
 button.addEventListener('click', function() {
      isMilitaryTime = !isMilitaryTime 
