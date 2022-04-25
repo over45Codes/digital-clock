@@ -13,4 +13,4 @@ It was challenging first application, especially the functions and button but I 
 
 ## Author
 
-- Grace Castaneda - Full Stack Developer - [Linkedin](https://www.linkedin.com/in/castanedagrace/)
+- Gracii Castaneda - Full Stack Developer - [Linkedin](https://www.linkedin.com/in/castanedagrace/)
