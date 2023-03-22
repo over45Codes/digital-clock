@@ -2,7 +2,7 @@
 
 - Digital clock application built in JavaScript, HTML, and CSS
 
-Try it [here!](https://graciicodes.github.io/digital-clock/)
+Try it [here!](https://over45Codes.github.io/digital-clock/)
 
 ![alt text](https://github.com/Gracii/digital-clock/blob/master/images/Digital%20Clock%20App%20.png)
 
