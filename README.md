@@ -8,8 +8,7 @@ Try it [here!](https://over45Codes.github.io/digital-clock/)
 
 ## Summary
 
-This is my first small app project in JavaScript, using HTML, and CSS.
-It was challenging first application, especially the functions and button but I really enjoyed the challenge!!
+This is a small JavaScript app project created with HTML and CSS. It presented some challenges, particularly with the functions and buttons, but I thoroughly enjoyed the creative experience!
 
 ## Author
 
