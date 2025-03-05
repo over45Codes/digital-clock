@@ -1,3 +1,4 @@
+
 let isMilitaryTime = false;
 let intervalID;
 
