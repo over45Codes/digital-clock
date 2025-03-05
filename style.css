@@ -7,6 +7,15 @@ body {
     text-align: center;
     margin: 100px
 }
+.clock {
+    font-family: Arial, sans-serif;
+    font-size: 2rem;
+    white-space: nowrap; /* Prevents breaking */
+}
+
+.clock span {
+    display: inline-block; /* Ensures they stay together */
+}
 
 .clock {
     background: thistle;
@@ -16,7 +25,7 @@ body {
     border-radius: 25px;
     text-align: center;
     border: 10px ridge rgb(221, 80, 200);
-    padding: 25px;
+    padding: 5px;
 }
 
 .date {
