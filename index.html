@@ -1,36 +1,33 @@
-
 <!DOCTYPE html>
-  <html>
-   <head>
-      <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>Grace's Digital Clock App</title>
-      <link href="style.css" rel="stylesheet">      
-      </head>
-   <body> 
-      <header>  
-        <h1>Digital Clock</h1> 
-           </header>  
-      <div class="clock"> 
-          <p id="time"></p>
-      </div>
-      <br>
-      <div class="date"> 
-        <span id="daysIndex"></span>
-        <span id="currentMonth"></span>
-        <span id="year"></span>
-      </div>
-      <br>
-      <div class="button"> 
-       <button id="button-24">Change Time Format</button> 
-      </div>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grace's Digital Clock App</title>
+    <link href="style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <header>
+      <h1>Digital Clock</h1>
+    </header>
 
-  <script src="script.js"></script>
+    <div class="clock">
+      <span id="hour"></span>
+      <span id="minute"></span>
+      <span id="seconds"></span>
+      <span id="amPm"></span>
+    </div>
+    <br />
+    <div class="date">
+      <span id="daysIndex"></span>
+      <span id="currentMonth"></span>
+      <span id="year"></span>
+    </div>
+    <br />
+    <div class="button">
+      <button id="button-24">Change Time Format</button>
+    </div>
 
-   </body>
-  </html>
-
-
-
- 
-
+    <script src="script.js"></script>
+  </body>
+</html>
