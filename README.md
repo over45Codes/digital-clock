@@ -10,6 +10,9 @@ Try it [here!](https://over45Codes.github.io/digital-clock/)
 
 This is a small JavaScript app project created with HTML and CSS. It presented some challenges, particularly with the functions and buttons, but I thoroughly enjoyed the creative experience!
 
+## Refactoring Code
+Replaced background color and I have to fix the digital number gap in JavaScript 3/7/2025 in progress....
+
 ## Author
 
 - Gracii Castaneda - Full Stack Developer - [Linkedin](https://www.linkedin.com/in/castanedagrace/)
