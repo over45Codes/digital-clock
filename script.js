@@ -38,7 +38,8 @@ function realTime() {
    ]; 
   
    document.querySelector(".date").innerHTML = 
-    `${dayArray[dayIndex]}, ${monthArray[months]} ${dayOfTheMonth}, ${year}`;
+    `${dayArray[dayIndex].trim()}, ${monthArray[months].trim()} ${dayOfTheMonth}, ${year}`;
+
 
     //    const day = dayArray[dayIndex]; 
 //    document.querySelector
