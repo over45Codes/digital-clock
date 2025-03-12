@@ -2,8 +2,9 @@ body {
     background-image: url("./images/harli-marten-n7a2OJDSZns-unsplash.jpg");
     color: rgb(131, 3, 131);
     font-size: 25px;
-    font-style: italic;
-    font-family: Verdana;
+    font-family: "Sofia", sans-serif;
+    /* font-style: italic;
+    font-family: Verdana; */
     text-align: center;
     margin: 100px
 }
