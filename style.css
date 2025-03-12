@@ -1,6 +1,6 @@
 body {
     background-image: url("./images/harli-marten-n7a2OJDSZns-unsplash.jpg");
-    color: magenta;
+    color: rgb(131, 3, 131);
     font-size: 25px;
     font-style: italic;
     font-family: Verdana;
@@ -20,12 +20,12 @@ body {
 .clock {
     background: thistle;
     color: royalblue;
-    width: 400px;
+    width: 250px;
     margin: auto;
     border-radius: 25px;
     text-align: center;
     border: 10px ridge rgb(221, 80, 200);
-    padding: 5px;
+    padding: 25px;
 }
 
 .amPm {
@@ -38,16 +38,18 @@ body {
 .date {
     background: rgb(238, 214, 217);
     color: royalblue;
-    width: 400px;
+    width: 220px;
     margin: auto;
+    font-size: 15px;
+    font-weight: bold;
     border-radius: 25px;
     text-align: center;
     border: 10px ridge mediumorchid;
-    padding: 25px;
+    padding: 20px;
 }
 
 #button-24 {
-    padding: 4px;
+    padding: 5px;
     color: mediumblue;
     background: thistle;
     font-size: 18px;
@@ -55,6 +57,6 @@ body {
     width: 200px;
     margin: auto;
     border: 6px ridge mediumvioletred;
-    border-radius: 35px;
+    border-radius: 20px;
 }
 
