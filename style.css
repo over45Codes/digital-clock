@@ -33,6 +33,7 @@ body {
     margin-left: 1px; /* Adds space before AM/PM */
     font-size: 30px; /* Slightly larger for visibility */
     font-weight: bold;
+    font-family: "Sofia", sans-serif;
 }
 
 
@@ -42,6 +43,7 @@ body {
     width: 220px;
     margin: auto;
     font-size: 15px;
+    font-family: "Sofia", sans-serif;
     font-weight: bold;
     border-radius: 25px;
     text-align: center;
@@ -53,11 +55,13 @@ body {
     padding: 5px;
     color: mediumblue;
     background: thistle;
-    font-size: 18px;
-    font-family: Verdana;
+    font-size: 15px;
+    font-weight: bold;
+    font-family: "Sofia", sans-serif;
+    /* font-family: Verdana; */
     width: 200px;
     margin: auto;
-    border: 6px ridge mediumvioletred;
+    border: 6px ridge rgb(243, 77, 182);
     border-radius: 20px;
 }
 
