@@ -28,6 +28,13 @@ body {
     padding: 5px;
 }
 
+.amPm {
+    margin-left: 1px; /* Adds space before AM/PM */
+    font-size: 30px; /* Slightly larger for visibility */
+    font-weight: bold;
+}
+
+
 .date {
     background: rgb(238, 214, 217);
     color: royalblue;
