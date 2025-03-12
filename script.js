@@ -25,39 +25,29 @@ function realTime() {
     let months = time.getMonth();
     let dayOfTheMonth = time.getDate();
     let year = time.getFullYear();
-    
-    const dayArray = [
-        "Sunday",
-        "Monday",
-        "Tuesday",
-        "Wednesday",
-        "Thursday",
-        "Friday",
-        "Saturday",
-    ]; 
-     const monthArray = [
-        "January",
-        "February",
-        "March",
-        "April",
-        "May",
-        "June",
-        "July",
-        "August",
-        "September",
-        "October",
-        "November",
-        "December",
-    ]; 
+  
 
     let formattedHour = isMilitaryTime ? hour : getStandardHour(hour)
    
-    const day = dayArray[dayIndex];  
-    document.getElementById("daysIndex").innerHTML = day + ','
-    const month = monthArray[months];  
-    document.getElementById("currentMonth").innerHTML = month + ' ' + dayOfTheMonth + ', ' + year
     document.querySelector(".clock").innerHTML = 
-    `${formattedHour}:${minute}:${seconds} <span class="amPm">${getAmPm(hour)}</span>`; // This ensures everything is in one line, but still keeps "AM/PM" separate.
+    `${formattedHour}:${minute}:${seconds} <span class="amPm">${getAmPm(hour)}</span>`;
+
+   const dayArray = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+    
+    const monthArray = ["January", "February", "March", "April",  "May", "June", "July", "August", "September", "October", "November", "December",
+   ]; 
+  
+   document.querySelector(".date").innerHTML = 
+    `${dayArray[dayIndex]}, ${monthArray[months]} ${dayOfTheMonth}, ${year}`;
+
+    //    const day = dayArray[dayIndex]; 
+//    document.querySelector
+
+    // document.getElementById("daysIndex").innerHTML = day + ','
+    // const month = monthArray[months];  
+    // document.getElementById("currentMonth").innerHTML = month + ' ' + dayOfTheMonth + ', ' + year
+    
+    // This ensures everything is in one line, but still keeps "AM/PM" separate.
 
     // * Replaced the separate get.ElementById and added it into one line - refactored code - 
     // document.getElementById("hour").innerHTML = formattedHour;
@@ -66,14 +56,20 @@ function realTime() {
     // document.getElementById("amPm").innerHTML = getAmPm(hour);  
 }
 
-function getAmPm(hour) { 
-    return isMilitaryTime ? "" : parseInt(hour) < 12 ? "AM" : "PM"
+function getAmPm(hour) {
+    return isMilitaryTime ? "" : hour < 12 ? "AM" : "PM";
 }
+// function getAmPm(hour) { 
+//     return isMilitaryTime ? "" : parseInt(hour) < 12 ? "AM" : "PM"
+// }
 
 function formatTime(time) {
     return time < 10 ? "0" + time : time
 }
 
 function getStandardHour(hour) {
-    return parseInt(hour) > 12 ? parseInt(hour) - 12 : hour
+    return hour > 12 ? hour - 12 : (hour === 0 ? 12 : hour);
 }
+// function getStandardHour(hour) {
+//     return parseInt(hour) > 12 ? parseInt(hour) - 12 : hour
+// }
