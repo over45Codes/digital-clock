@@ -56,10 +56,14 @@ function realTime() {
     document.getElementById("daysIndex").innerHTML = day + ','
     const month = monthArray[months];  
     document.getElementById("currentMonth").innerHTML = month + ' ' + dayOfTheMonth + ', ' + year
-    document.getElementById("hour").innerHTML = formattedHour;
-    document.getElementById("minute").innerHTML = ":" + minute;
-    document.getElementById("seconds").innerHTML = ":" + seconds;
-    document.getElementById("amPm").innerHTML = getAmPm(hour);  
+    document.querySelector(".clock").innerHTML = 
+    `${formattedHour}:${minute}:${seconds} <span class="amPm">${getAmPm(hour)}</span>`; // This ensures everything is in one line, but still keeps "AM/PM" separate.
+
+    // * Replaced the separate get.ElementById and added it into one line - refactored code - 
+    // document.getElementById("hour").innerHTML = formattedHour;
+    // document.getElementById("minute").innerHTML = ":" + minute;
+    // document.getElementById("seconds").innerHTML = ":" + seconds;
+    // document.getElementById("amPm").innerHTML = getAmPm(hour);  
 }
 
 function getAmPm(hour) { 
