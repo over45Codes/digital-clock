@@ -6,7 +6,7 @@ body {
     /* font-style: italic;
     font-family: Verdana; */
     text-align: center;
-    margin: 100px
+    /* margin: auto; */
 }
 .clock {
     font-family: Arial, sans-serif;
@@ -21,12 +21,15 @@ body {
 .clock {
     background: thistle;
     color: royalblue;
-    width: auto;
-    /* margin: auto; */
     border-radius: 25px;
     text-align: center;
     border: 10px ridge rgb(221, 80, 200);
     padding: 14px;
+    width: 269px;
+    margin: auto;
+    /* font-size: 25px; */
+    /* width: 100%; */
+    /* width: 269px; */
 }
 
 .amPm {
@@ -40,9 +43,10 @@ body {
 .date {
     background: rgb(238, 214, 217);
     color: royalblue;
-    width: auto;
+    /* width: 100%; */
+    width: 269px;
     margin: auto;
-    font-size: 24px;
+    font-size: 22px;
     font-family: "Sofia", sans-serif;
     font-weight: bold;
     border-radius: 25px;
