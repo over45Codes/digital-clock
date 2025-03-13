@@ -4,7 +4,7 @@
 
 Try it [here!](https://over45Codes.github.io/digital-clock/)
 
-![alt text](https://github.com/over45Codes/digital-clock/blob/master/images/digitalfinal.png)
+![alt text](https://github.com/over45Codes/digital-clock/blob/master/images/digitalclocklove.png)
 
 ## Summary
 
