@@ -21,12 +21,12 @@ body {
 .clock {
     background: thistle;
     color: royalblue;
-    width: 250px;
-    margin: auto;
+    width: auto;
+    /* margin: auto; */
     border-radius: 25px;
     text-align: center;
     border: 10px ridge rgb(221, 80, 200);
-    padding: 25px;
+    padding: 14px;
 }
 
 .amPm {
@@ -40,9 +40,9 @@ body {
 .date {
     background: rgb(238, 214, 217);
     color: royalblue;
-    width: 220px;
+    width: auto;
     margin: auto;
-    font-size: 17px;
+    font-size: 24px;
     font-family: "Sofia", sans-serif;
     font-weight: bold;
     border-radius: 25px;
@@ -52,16 +52,16 @@ body {
 }
 
 #button-24 {
-    padding: 5px;
+    padding: 18px;
     color: mediumblue;
     background: thistle;
-    font-size: 18px;
+    font-size: 24px;
     font-weight: bold;
     font-family: "Sofia", sans-serif;
     /* font-family: Verdana; */
     width: 269px;
     margin: auto;
     border: 6px ridge rgb(243, 77, 182);
-    border-radius: 20px;
+    border-radius: 27px;
 }
 
