@@ -14,9 +14,9 @@ body {
     white-space: nowrap; /* Prevents breaking */
 }
 
-.clock span {
+/* .clock span {
     display: inline-block; /* Ensures they stay together */
-}
+/* }  */
 
 .clock {
     background: thistle;
