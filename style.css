@@ -6,7 +6,8 @@ body {
     /* font-style: italic;
     font-family: Verdana; */
     text-align: center;
-    /* margin: auto; */
+    padding-top: 20px;
+    margin: auto;
 }
 .clock {
     font-family: Arial, sans-serif;
@@ -25,7 +26,7 @@ body {
     text-align: center;
     border: 10px ridge rgb(221, 80, 200);
     padding: 14px;
-    width: 269px;
+    width: 355px;
     margin: auto;
     /* font-size: 25px; */
     /* width: 100%; */
@@ -44,7 +45,7 @@ body {
     background: rgb(238, 214, 217);
     color: royalblue;
     /* width: 100%; */
-    width: 269px;
+    width: 350px;
     margin: auto;
     font-size: 22px;
     font-family: "Sofia", sans-serif;
@@ -63,7 +64,7 @@ body {
     font-weight: bold;
     font-family: "Sofia", sans-serif;
     /* font-family: Verdana; */
-    width: 269px;
+    width: 350px;
     margin: auto;
     border: 6px ridge rgb(243, 77, 182);
     border-radius: 27px;
