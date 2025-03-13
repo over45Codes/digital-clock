@@ -18,5 +18,5 @@ Replaced background color and I have to fix the digital number gap in JavaScript
 - Gracii Castaneda - Full Stack Developer - [Linkedin](https://www.linkedin.com/in/castanedagrace/)
 
 
-                                             © 2025 Over45Codes
+                        © 2025 over45Codes
 
